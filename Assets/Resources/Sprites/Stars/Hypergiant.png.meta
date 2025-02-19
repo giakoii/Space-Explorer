@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hypergiant_0: 7264552033561161886
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

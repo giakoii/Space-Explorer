@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 3357882916328668875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.950399, y: 0.8075728, z: 0.018388204}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.9159, y: 0.7248, z: 0.018388204}
+  m_LocalScale: {x: 1.8628615, y: 1.6372348, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,8 +78,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 98be93167ed6cd54d82a8e882da6f3e1, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 1518114905146836669, guid: 5a27d2c93fb62784eb6d686fcfc92a34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3357882916328668875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a9cc9c1f1840d48c1419ac828a790b, type: 3}
+  m_Script: {fileID: 11500000, guid: 414063c5326da0145a2217e8ceaede4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   missileSpeed: 20

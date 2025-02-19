@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DustWisps 2_0: 435286730853464919
+      DustWisps 2_1: -1858242385639448494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
