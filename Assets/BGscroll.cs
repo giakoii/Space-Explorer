@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BGscroll : MonoBehaviour
 {
-    public float speed = 4f;
+    public float speed = 1f;
     private Vector3 StartPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
