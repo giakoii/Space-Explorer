@@ -41,8 +41,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 251530784846481949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f47b6b9c82915a645958fb188c989b5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 00a3c2f1ba6974c57a9392079119eb0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Asteroids: {fileID: 8372328452996186168, guid: 3e67ce63a8565ef48937a963245d8136, type: 3}
+  Asteroids: {fileID: 8372328452996186168, guid: eb7e605df3eff4e1bbd3ccb8a8afe55d, type: 3}
   maxSpawnRatesInSeconds: 8
