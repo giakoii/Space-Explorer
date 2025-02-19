@@ -21,7 +21,6 @@ MemoryCaptures/
 .DS_Store
 Thumbs.db
 
-*.meta
 *.unitypackage
 
 .git/lfs/
