@@ -68,6 +68,7 @@ namespace Controller
             if(other.gameObject.tag == (Constant.Object.Star.ToString()))
             {
                 _spaceShip.AddScore(20);
+                Destroy(other.gameObject);
                 Debug.LogWarning(_spaceShip.Score);
             }
         }
