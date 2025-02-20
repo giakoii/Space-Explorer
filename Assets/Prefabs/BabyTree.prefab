@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,13 +78,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -4551898641639680338, guid: 01f01608c7d494794ae8b7ae581f24ae, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: -4551898641639680338, guid: eb523b3330b37a9439a8742045aba6ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.93, y: 4.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -129,7 +129,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3.1, y: 3.29}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 4.93, y: 4.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2625769446988856465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12838560217f4f19a8933e57c35494c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e919229c4d3c364f81f9b1a00f3a640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
