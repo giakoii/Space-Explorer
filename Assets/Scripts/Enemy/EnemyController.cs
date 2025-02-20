@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
     private int moveDirection;
     private float changeDirectionTime = 2f; // Change direction every 2 seconds
     private GameManager gameManager;
-
+    public GameObject ExplosionGO;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -102,15 +102,32 @@ public class EnemyController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((collision.tag == "Spaceship") || (collision.tag == "PlayerBullet"))
+        if ((collision.tag == "Spaceship"))
         {
             Debug.Log("Enemy collide Player");
             Destroy(gameObject);
-            Destroy(collision.gameObject);
+            PlayExplosionAnimation();
             gameManager.GameOver();
         }
+        else if ((collision.tag == "PlayerBullet"))
+        {
+            Debug.Log("Enemy collide Player");
+            Destroy(gameObject);
+            PlayExplosionAnimation();
+        }
     }
+    void PlayExplosionAnimation()
+    {
+        GameObject explosion = (GameObject)Instantiate(ExplosionGO);
+        explosion.transform.position = transform.position;
+        DestroyExplosionAnimation(explosion);
 
+    }
+    void DestroyExplosionAnimation(GameObject explosion)
+    {
+        float explosionDuration = 1f; // Adjust based on the animation length
+        Destroy(explosion, explosionDuration);
+    }
     public void SetMoveDirection(int direction)
     {
         moveDirection = direction;

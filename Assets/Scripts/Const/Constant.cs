@@ -9,6 +9,7 @@ namespace Const
             EnemyBullet,
             Enemy,
             Star,
+            Asteroid
         }
     }
 }

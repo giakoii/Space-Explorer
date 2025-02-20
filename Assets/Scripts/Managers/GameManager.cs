@@ -8,10 +8,11 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    int score = 0;
+    static int score;
     [SerializeField] public GameObject gameOver;
     [SerializeField] public TextMeshProUGUI scoreText;
     public bool isGameOver = false;
+    public int flag = 0;
 
     public static GameManager instance;
     public float minValue = -6f;
@@ -63,7 +64,7 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         score = 0;
         Time.timeScale = 1;
-      //  GameOver();
+      // GameOver();
         SceneManager.LoadScene("GameOver");
     }
     public void AddScore(int points)
@@ -74,5 +75,14 @@ public class GameManager : MonoBehaviour
     public void UpdateScore()
     {
         scoreText.text = score.ToString();
+        if (score >= 10 && flag == 0)
+        {
+            flag = 1;
+            isGameOver = true;
+
+            SceneManager.LoadScene("Gamplay2");
+        }
     }
+
+
 }

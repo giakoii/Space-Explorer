@@ -178,3 +178,4 @@ MonoBehaviour:
   health: 150
   scoreValue: 150
   speed: 2
+  ExplosionGO: {fileID: 4284359317235226612, guid: fd417b31e9c3e3b4780b88c9cbc271b4, type: 3}

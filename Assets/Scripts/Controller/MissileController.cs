@@ -8,12 +8,15 @@ namespace Controller
     /// <summary>
     /// MissileController - Controls the movement of the missile
     /// </summary>
+    /// 
+
     public class MissileController : MonoBehaviour
     {
         public float missileSpeed = 20f;
         private SpaceShip _spaceShip;
 
         private GameManager gameManager;
+
         private void Start()
         {
             _spaceShip = gameObject.AddComponent<SpaceShip>();
@@ -55,17 +58,15 @@ namespace Controller
                 EnemyController enemyController = FindAnyObjectByType<EnemyController>();
                 gameManager.AddScore(enemyController.GetScoreValue());
                 Destroy(gameObject);
-                Destroy(collision.gameObject);
             }
             else if ((collision.tag == "Asteroid"))
             {
                 AsteroidController asteroidController = FindAnyObjectByType<AsteroidController>();
                 gameManager.AddScore(asteroidController.GetScoreValue());
                 Destroy(gameObject);
-                Destroy(collision.gameObject);
             }
         }
-
+        
 
     }
 }

@@ -34,11 +34,10 @@ public class EnemyBullet : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((collision.tag == "Player"))
+        if ((collision.tag == "Spaceship"))
         {
             Debug.Log("Enemy Bullet hit Player");
             Destroy(gameObject);
-            Destroy(collision.gameObject);
             gameManager.GameOver();
         }
     }
