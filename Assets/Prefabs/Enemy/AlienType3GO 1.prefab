@@ -113,6 +113,7 @@ MonoBehaviour:
   AlienType3BulletPosition1: {fileID: 8622195057321682331}
   AlienType3BulletPosition2: {fileID: 6322369505967346560}
   AlienType3BulletPosition3: {fileID: 6469526762308699898}
+  ExplosionGO: {fileID: 4284359317235226612, guid: fd417b31e9c3e3b4780b88c9cbc271b4, type: 3}
 --- !u!61 &-5838848139714299323
 BoxCollider2D:
   m_ObjectHideFlags: 0
