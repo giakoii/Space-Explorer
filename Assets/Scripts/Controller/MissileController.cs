@@ -15,7 +15,7 @@ namespace Controller
 
         private void Start()
         {
-            _spaceShip = gameObject.AddComponent<SpaceShip>();
+            _spaceShip = FindObjectOfType<SpaceShip>();
         }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Controller
                 Destroy(this.gameObject);
                 Destroy(other.gameObject);
                _spaceShip.AddScore(70);
-                Debug.LogWarning(_spaceShip.Score);
+                Debug.LogWarning("Điểm đang có: " + _spaceShip.Score);
             }
         }
     }

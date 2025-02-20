@@ -202,7 +202,7 @@ Transform:
   m_GameObject: {fileID: 43989439}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.1, z: 0}
+  m_LocalPosition: {x: 0.26, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1037,6 +1037,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 100002, guid: 7dfe639bda9890845993a1eff9f08176, type: 3}
   flashEffect: {fileID: 100002, guid: 0be6e3064c585494a8c8e31c18972165, type: 3}
   babyTreePrefab: {fileID: 2625769446988856465, guid: ff0f206991d6eff458fb704964abfd4b, type: 3}
+  afterBurner: {fileID: 100000, guid: 24093b3214b9e24419f421390e8b3eec, type: 3}
 --- !u!4 &1385014892
 Transform:
   m_ObjectHideFlags: 0

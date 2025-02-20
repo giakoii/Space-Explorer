@@ -21,12 +21,12 @@ public class GameManager : MonoBehaviour
     [Header("Baby Tree")]
     public GameObject babyTreePrefab;
     
-    // [Header("After Burner")]
-    // public GameObject afterBurner;
+    [Header("After Burner")]
+    public GameObject afterBurner;
 
     private void Start()
     {
-        InvokeRepeating("InstantiateBabyTree", 1f, 5f);
+        InvokeRepeating("InstantiateBabyTree", 1f, 20f);
         instance = this;
     }
 
@@ -43,9 +43,9 @@ public class GameManager : MonoBehaviour
         Destroy(gameObject, 2f); 
     }
     
-    // public void InstatiateAfterBurner(GameObject gameObject ,Transform transform)
-    // {
-    //     Instantiate(GameManager.instance.afterBurner, transform.position, transform.rotation);
-    //     Destroy(gameObject, 2f);
-    // }
+    public void InstatiateAfterBurner(GameObject gameObject ,Transform transform)
+    {
+        Instantiate(GameManager.instance.afterBurner, transform.position, transform.rotation);
+        Destroy(gameObject, 2f);
+    }
 }
