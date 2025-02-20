@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Brown Dwarf_0: 498386388220331251
+      Brown Dwarf_1: 4012834921047019586
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

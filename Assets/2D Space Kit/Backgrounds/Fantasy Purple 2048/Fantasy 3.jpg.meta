@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fantasy 3_0: -6998450582271221213
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
