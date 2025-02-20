@@ -54,10 +54,17 @@ namespace Controller
                 Debug.LogWarning(_spaceShip.Health);
             }
 
-            if(other.gameObject.tag == (Constant.Object.EnemyBullet.ToString()))
+            if(other.gameObject.tag == (Constant.Object.Star.ToString()))
             {
-                _spaceShip.AddScore(20);
+                _spaceShip.AddScore(10);
                 Debug.LogWarning(_spaceShip.Score);
+            }
+
+            if (other.gameObject.tag == (Constant.Object.EnemyBullet.ToString()))
+            {
+                _spaceShip.TakeDamage(20);
+                Destroy(other.gameObject);
+                Debug.LogWarning(_spaceShip.Health);
             }
         }
     }

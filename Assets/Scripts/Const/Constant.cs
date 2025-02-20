@@ -8,6 +8,7 @@ namespace Const
             BabyTree,
             EnemyBullet,
             Enemy,
+            Star,
         }
     }
 }
