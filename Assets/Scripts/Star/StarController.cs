@@ -5,9 +5,10 @@ public class StarController : MonoBehaviour
     [SerializeField] int scoreValue = 100;
     [SerializeField] float speed = 4f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private GameManager gameManager;
     void Start()
     {
-        
+        gameManager = GameManager.instance;
     }
 
     // Update is called once per frame
@@ -37,6 +38,7 @@ public class StarController : MonoBehaviour
         if ((collision.tag == "Spaceship"))
         {
             Debug.Log("Star collide Player");
+            gameManager.AddScore(1);
             Destroy(gameObject);
         }
     }

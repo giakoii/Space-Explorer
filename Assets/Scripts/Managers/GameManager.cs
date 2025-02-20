@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
 {
     int score = 0;
     [SerializeField] public GameObject gameOver;
+    [SerializeField] public TextMeshProUGUI scoreText;
     public bool isGameOver = false;
 
     public static GameManager instance;
@@ -34,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         InvokeRepeating("InstantiateBabyTree", 1f, 5f);
         instance = this;
+        UpdateScore(); 
     }
 
     void InstantiateBabyTree()
@@ -61,5 +64,14 @@ public class GameManager : MonoBehaviour
         score = 0;
         Time.timeScale = 0;
         GameOver();
+    }
+    public void AddScore(int points)
+    {
+        score += points;
+        UpdateScore();
+    }
+    public void UpdateScore()
+    {
+        scoreText.text = score.ToString();
     }
 }
