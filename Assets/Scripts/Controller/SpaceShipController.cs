@@ -55,20 +55,18 @@ namespace Controller
                 _spaceShip.TakeDamage(80);
                 //Destroy(this.gameObject);
                 Destroy(other.gameObject);
-                Debug.LogWarning("Health : " + _spaceShip.Health);
+                Debug.LogWarning(_spaceShip.Health);
             }
 
             if(other.gameObject.tag == (Constant.Object.Asteroid.ToString()))
             {
                 _spaceShip.TakeDamage(20);
                 Destroy(other.gameObject);
-                Debug.LogWarning("Máu còn lại: " +_spaceShip.Health);
             }
 
             if(other.gameObject.tag == (Constant.Object.Star.ToString()))
             {
                 _spaceShip.AddScore(20);
-                Debug.LogWarning("Điểm đang có: " + _spaceShip.Score);
             }
         }
     }

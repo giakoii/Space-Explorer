@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5842378338362248739}
   - component: {fileID: 138207444903211320}
   - component: {fileID: -2085418139910463480}
-  - component: {fileID: -427117799770491710}
+  - component: {fileID: 3421423798416584897}
   m_Layer: 0
   m_Name: BabyTree
   m_TagString: BabyTree
@@ -29,8 +29,6 @@ Transform:
   m_GameObject: {fileID: 2625769446988856465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21029684, y: -1.3363131, z: -0.027645495}
-  m_LocalScale: {x: 0.18356632, y: 0.20543061, z: 0.18609723}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +56,6 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,13 +75,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
-  m_Sprite: {fileID: -4551898641639680338, guid: eb523b3330b37a9439a8742045aba6ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.1, y: 3.29}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -126,10 +120,8 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.01, y: 0, z: 0.02, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3.1, y: 3.29}
-    newSize: {x: 3.1, y: 3.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -145,11 +137,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2625769446988856465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e919229c4d3c364f81f9b1a00f3a640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
---- !u!50 &-427117799770491710
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
