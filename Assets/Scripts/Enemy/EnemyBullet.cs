@@ -37,7 +37,8 @@ public class EnemyBullet : MonoBehaviour
         if ((collision.tag == "Player"))
         {
             Debug.Log("Enemy Bullet hit Player");
-            // Destroy(gameObject);
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
             gameManager.GameOver();
         }
     }

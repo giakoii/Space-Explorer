@@ -26,6 +26,11 @@ public class EnemyController : MonoBehaviour
         gameManager = GameManager.instance;
     }
 
+    public int GetScoreValue()
+    {
+        return scoreValue; 
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -100,8 +105,9 @@ public class EnemyController : MonoBehaviour
         if ((collision.tag == "Spaceship") || (collision.tag == "PlayerBullet"))
         {
             Debug.Log("Enemy collide Player");
-            //Destroy(gameObject);
-
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+            gameManager.GameOver();
         }
     }
 

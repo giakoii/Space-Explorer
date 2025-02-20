@@ -13,9 +13,11 @@ namespace Controller
         public float missileSpeed = 20f;
         private SpaceShip _spaceShip;
 
+        private GameManager gameManager;
         private void Start()
         {
             _spaceShip = gameObject.AddComponent<SpaceShip>();
+            gameManager = GameManager.instance;
         }
 
         /// <summary>
@@ -26,6 +28,7 @@ namespace Controller
             transform.Translate(Vector3.up * (missileSpeed * Time.deltaTime));
         }
 
+        /*
         /// <summary>
         /// OnCollisionEnter2D - Destroys the missile and the Baby Tree when they collide
         /// </summary>
@@ -38,9 +41,31 @@ namespace Controller
                 Destroy(gm, 2f);
                 Destroy(this.gameObject);
                 Destroy(other.gameObject);
-               _spaceShip.AddScore(70);
+                _spaceShip.AddScore(70);
                 Debug.LogWarning(_spaceShip.Score);
             }
         }
+        */
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+
+            if((collision.tag == "Enemy"))
+            {
+                EnemyController enemyController = FindAnyObjectByType<EnemyController>();
+                gameManager.AddScore(enemyController.GetScoreValue());
+                Destroy(gameObject);
+                Destroy(collision.gameObject);
+            }
+            else if ((collision.tag == "Asteroid"))
+            {
+                AsteroidController asteroidController = FindAnyObjectByType<AsteroidController>();
+                gameManager.AddScore(asteroidController.GetScoreValue());
+                Destroy(gameObject);
+                Destroy(collision.gameObject);
+            }
+        }
+
+
     }
 }
