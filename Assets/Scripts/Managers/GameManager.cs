@@ -2,7 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
+using UnityEngine.SceneManagement;
 /// <summary>
 /// GameManager - Controls the game
 /// </summary>
@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         Time.timeScale = 0;
         GameOver();
+        SceneManager.LoadScene("GameOver");
     }
     public void AddScore(int points)
     {
