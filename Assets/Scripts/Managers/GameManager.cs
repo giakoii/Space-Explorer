@@ -62,8 +62,8 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         score = 0;
-        Time.timeScale = 0;
-        GameOver();
+        Time.timeScale = 1;
+      //  GameOver();
         SceneManager.LoadScene("GameOver");
     }
     public void AddScore(int points)
