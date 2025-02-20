@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - EnemyBullet
   - Star
+  - Spaceship
   layers:
   - Default
   - TransparentFX

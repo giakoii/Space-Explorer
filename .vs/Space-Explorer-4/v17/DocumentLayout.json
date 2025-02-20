@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\Space-Explorer-4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{10AF603C-FEA0-CF21-7D0D-B0099198CA2A}|Assembly-CSharp.csproj|d:\\github\\space-explorer-4\\assets\\scripts\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10AF603C-FEA0-CF21-7D0D-B0099198CA2A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10AF603C-FEA0-CF21-7D0D-B0099198CA2A}|Assembly-CSharp.csproj|d:\\github\\space-explorer-4\\assets\\scripts\\enemy\\asteroidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10AF603C-FEA0-CF21-7D0D-B0099198CA2A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\asteroidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10AF603C-FEA0-CF21-7D0D-B0099198CA2A}|Assembly-CSharp.csproj|d:\\github\\space-explorer-4\\assets\\scripts\\star\\starcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10AF603C-FEA0-CF21-7D0D-B0099198CA2A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\star\\starcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Space-Explorer-4\\Assets\\Scripts\\Enemy\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyController.cs",
+              "ToolTip": "D:\\GitHub\\Space-Explorer-4\\Assets\\Scripts\\Enemy\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwGUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:05:36.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AsteroidController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Space-Explorer-4\\Assets\\Scripts\\Enemy\\AsteroidController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\AsteroidController.cs",
+              "ToolTip": "D:\\GitHub\\Space-Explorer-4\\Assets\\Scripts\\Enemy\\AsteroidController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\AsteroidController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA1wCcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:04:43.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StarController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Space-Explorer-4\\Assets\\Scripts\\Star\\StarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Star\\StarController.cs",
+              "ToolTip": "D:\\GitHub\\Space-Explorer-4\\Assets\\Scripts\\Star\\StarController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Star\\StarController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T17:41:05.007Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

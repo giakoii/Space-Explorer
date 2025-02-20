@@ -94,10 +94,10 @@ public class EnemyController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((collision.tag == "Player") || (collision.tag == "PlayerBullet"))
+        if ((collision.tag == "Spaceship") || (collision.tag == "PlayerBullet"))
         {
             Debug.Log("Enemy collide Player");
-            // Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
