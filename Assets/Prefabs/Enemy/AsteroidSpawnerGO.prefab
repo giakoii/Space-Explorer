@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6502718839311479204}
-  - component: {fileID: 3790893922240563203}
+  - component: {fileID: 5845450136651879025}
   m_Layer: 0
   m_Name: AsteroidSpawnerGO
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3790893922240563203
+--- !u!114 &5845450136651879025
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,8 +41,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 251530784846481949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a3c2f1ba6974c57a9392079119eb0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ca98a2175aa76c4d875d63b91d60d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Asteroids: {fileID: 8372328452996186168, guid: eb7e605df3eff4e1bbd3ccb8a8afe55d, type: 3}
+  Asteroids: {fileID: 447674720690136908, guid: be824771903333242ad6b80b95813cb4, type: 3}
   maxSpawnRatesInSeconds: 8
