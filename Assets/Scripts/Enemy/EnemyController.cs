@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
 
     private int moveDirection;
     private float changeDirectionTime = 2f; // Change direction every 2 seconds
+    private GameManager gameManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +22,8 @@ public class EnemyController : MonoBehaviour
         SpawnBullets();
         moveDirection = Random.Range(0, 2); // 0 = Vertical, 1 = Horizontal
         InvokeRepeating(nameof(ChangeDirection), changeDirectionTime, changeDirectionTime);
+
+        gameManager = GameManager.instance;
     }
 
     // Update is called once per frame
@@ -97,7 +100,8 @@ public class EnemyController : MonoBehaviour
         if ((collision.tag == "Spaceship") || (collision.tag == "PlayerBullet"))
         {
             Debug.Log("Enemy collide Player");
-            Destroy(gameObject);
+            //Destroy(gameObject);
+
         }
     }
 

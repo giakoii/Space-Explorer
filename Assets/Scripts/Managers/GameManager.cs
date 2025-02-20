@@ -7,6 +7,10 @@ using Random = UnityEngine.Random;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
+    int score = 0;
+    [SerializeField] public GameObject gameOver;
+    public bool isGameOver = false;
+
     public static GameManager instance;
     public float minValue = -6f;
     public float maxValue = 7f;
@@ -50,4 +54,12 @@ public class GameManager : MonoBehaviour
     //     Instantiate(GameManager.instance.afterBurner, transform.position, transform.rotation);
     //     Destroy(gameObject, 2f);
     // }
+
+    public void GameOver()
+    {
+        isGameOver = true;
+        score = 0;
+        Time.timeScale = 0;
+        GameOver();
+    }
 }

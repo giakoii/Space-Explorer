@@ -6,10 +6,12 @@ public class AsteroidController : MonoBehaviour
     [SerializeField] int scoreValue = 100;
     [SerializeField] float speed = 7f;
 
+    private GameManager gameManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameManager = GameManager.instance;
     }
 
     // Update is called once per frame
@@ -38,7 +40,8 @@ public class AsteroidController : MonoBehaviour
         if ((collision.tag == "Spaceship") || (collision.tag == "PlayerBullet"))
         {
             Debug.Log("Asteroid collide Player");
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            gameManager.GameOver();
         }
     }
 
