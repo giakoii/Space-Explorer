@@ -54,4 +54,13 @@ public class EnemyController : MonoBehaviour
         GameObject bullet = (GameObject)Instantiate(enemyBulletGO);
         bullet.transform.position = spawnPosition;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if( (collision.tag == "Player") || (collision.tag == "PlayerBullet") )
+        {
+            Debug.Log("Enemy collide Player");
+            // Destroy(gameObject);
+        }
+    }
 }

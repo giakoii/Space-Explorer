@@ -31,4 +31,14 @@ public class StarController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if ((collision.tag == "Player") || (collision.tag == "PlayerBullet"))
+        {
+            Debug.Log("Star collide Player");
+            // Destroy(gameObject);
+        }
+    }
+
 }

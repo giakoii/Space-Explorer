@@ -39,6 +39,7 @@ namespace Controller
                 Destroy(this.gameObject);
                 Destroy(other.gameObject);
                _spaceShip.AddScore(70);
+                Debug.LogWarning(_spaceShip.Score);
             }
         }
     }
