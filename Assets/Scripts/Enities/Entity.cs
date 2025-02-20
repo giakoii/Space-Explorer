@@ -7,8 +7,8 @@ namespace Enities
         public string EntityName { get; protected set; }
         public float Speed { get; protected set; }
         public int Health { get; set; }
-        
-        public int Score { get; protected set; }
+
+        public int Score { get; set; }
 
         public virtual void TakeDamage(int amount)
         {

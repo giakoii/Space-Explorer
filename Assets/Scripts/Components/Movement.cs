@@ -37,11 +37,11 @@ namespace Components
             //SpawnAfterBurner(afterBurnerTransform);
         }
         
-        // private void SpawnAfterBurner(Transform transform)
-        // {
-        //     GameObject afterBurner = Instantiate(GameManager.instance.afterBurner, transform);
-        //     afterBurner.transform.SetParent(null);
-        //     Destroy(afterBurner, 0.2f);
-        // }
+        private void SpawnAfterBurner(Transform transform)
+        {
+            GameObject afterBurner = Instantiate(GameManager.instance.afterBurner, transform);
+            afterBurner.transform.SetParent(null);
+            Destroy(afterBurner, 0.2f);
+        }
     }
 }
