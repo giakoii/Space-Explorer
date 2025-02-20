@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void SpawnEnemy()
@@ -23,7 +23,25 @@ public class EnemySpawner : MonoBehaviour
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
 
         GameObject clone = (GameObject)Instantiate(EnemyGO);
-        clone.transform.position = new Vector2(Random.Range(min.x, max.x), max.y);
+
+        EnemyController enemyController = clone.GetComponent<EnemyController>();
+        int moveDirection = Random.Range(0, 2);
+
+        if (enemyController != null)
+        {
+            enemyController.SetMoveDirection(moveDirection);
+        }
+
+        // Adjust spawn position based on movement direction
+        if (moveDirection == 0) // Vertical movement (spawn at the top)
+        {
+            clone.transform.position = new Vector2(Random.Range(min.x + 0.5f, max.x) + 0.5f, max.y - 0.5f);
+        }
+        else // Horizontal movement (spawn at the left or right)
+        {
+            float xPosition = (Random.Range(0, 2) == 0) ? min.x : max.x / 2; // Randomly choose left or middle
+            clone.transform.position = new Vector2(xPosition + 0.5f, max.y);
+        }
 
         ScheduleNextSpawn();
     }
