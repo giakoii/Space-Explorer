@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8144167243632022898}
-  - component: {fileID: 9140434457903196584}
+  - component: {fileID: -2708332761396253974}
   m_Layer: 0
   m_Name: EnemyType1SpawnerGO
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9140434457903196584
+--- !u!114 &-2708332761396253974
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,8 +41,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2172857593047999199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25304684f17c2fd4b9e24824f6bdda78, type: 3}
+  m_Script: {fileID: 11500000, guid: 051a957e36d2dc34fb5d13b7b96d8cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyGO: {fileID: 4308676644487315093, guid: 89b9c0b2a8d6efe428a45e9b4608e581, type: 3}
+  EnemyGO: {fileID: 9129858725143193962, guid: dbbe8e4f985777447860b929103f7873, type: 3}
   maxSpawnRatesInSeconds: 8

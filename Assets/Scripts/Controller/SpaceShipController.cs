@@ -3,12 +3,11 @@ using Const;
 using Enities;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 
 namespace Controller
 {
-    /// <summary>
-    /// SpaceShipController - Controls the movement and shooting of the spaceship
-    /// </summary>
+    
     public class SpaceShipController : MonoBehaviour
     {
         private Movement _movement;
@@ -23,31 +22,26 @@ namespace Controller
 
         public Transform missileSpawn;
         public Transform muzzleFlashTransform;
-        //public Transform afterBurnerTransform;
 
-        /// <summary>
-        /// Awake - Initializes the Movement and Shooting components
-        /// </summary>
+        public GameManager gameManager;
+        public GameObject ExplosionGO;
+        
         private void Awake()
         {
             _movement = gameObject.AddComponent<Movement>();
             _shooting = gameObject.AddComponent<Shooting>();
             _spaceShip = gameObject.AddComponent<SpaceShip>();
+            gameManager = GameManager.instance;
         }
 
-        /// <summary>
-        /// Update - Moves the spaceship and shoots missiles
-        /// </summary>
+      
         private void Update()
         {
             _movement.SpawnMove(muzzleFlashTransform);
             _shooting.Shoot(_missile, missileSpawn, muzzleFlashTransform);
         }
         
-        /// <summary>
-        /// OnCollisionEnter2D - Destroys the spaceship and the Baby Tree when they collide
-        /// </summary>
-        /// <param name="other"></param>
+        
         private void OnCollisionEnter2D(Collision2D other)
         {
             if(other.gameObject.tag == (Constant.Object.BabyTree.ToString()))
@@ -55,21 +49,62 @@ namespace Controller
                 _spaceShip.TakeDamage(80);
                 //Destroy(this.gameObject);
                 Destroy(other.gameObject);
+
+                PlayExplosionAnimation();
                 Debug.LogWarning(_spaceShip.Health);
             }
 
-            if(other.gameObject.tag == (Constant.Object.Asteroid.ToString()))
+            if(other.gameObject.tag == (Constant.Object.Enemy.ToString()))
             {
                 _spaceShip.TakeDamage(20);
                 Destroy(other.gameObject);
+
+                
+                PlayExplosionAnimation();
+                gameManager.GameOver();
                 Debug.LogWarning(_spaceShip.Health);
             }
 
-            if(other.gameObject.tag == (Constant.Object.Star.ToString()))
+            if (other.gameObject.tag == (Constant.Object.Asteroid.ToString()))
             {
-                _spaceShip.AddScore(20);
+                _spaceShip.TakeDamage(20);
+                Destroy(other.gameObject);
+
+                
+                PlayExplosionAnimation();
+                gameManager.GameOver();
+                Debug.LogWarning(_spaceShip.Health);
+            }
+
+            if (other.gameObject.tag == (Constant.Object.Star.ToString()))
+            {
+                _spaceShip.AddScore(10);
                 Debug.LogWarning(_spaceShip.Score);
             }
+
+            if (other.gameObject.tag == (Constant.Object.EnemyBullet.ToString()))
+            {
+                _spaceShip.TakeDamage(20);
+                Destroy(other.gameObject);
+                
+                PlayExplosionAnimation();
+                gameManager.GameOver();
+                Debug.LogWarning(_spaceShip.Health);
+            }
+        }
+
+
+        void PlayExplosionAnimation()
+        {
+            GameObject explosion = (GameObject)Instantiate(ExplosionGO);
+            explosion.transform.position = transform.position;
+            DestroyExplosionAnimation(explosion);
+
+        }
+        void DestroyExplosionAnimation(GameObject explosion)
+        {
+            float explosionDuration = 1f; // Adjust based on the animation length
+            Destroy(explosion, explosionDuration);
         }
     }
 }

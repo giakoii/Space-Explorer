@@ -6,8 +6,10 @@ namespace Const
         public enum Object
         {
             BabyTree,
-            Asteroid,
+            EnemyBullet,
+            Enemy,
             Star,
+            Asteroid
         }
     }
 }

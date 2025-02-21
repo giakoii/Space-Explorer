@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Desert 2_0: 4219308302549531191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

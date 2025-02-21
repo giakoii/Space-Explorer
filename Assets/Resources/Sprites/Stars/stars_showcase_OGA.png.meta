@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stars_showcase_OGA_0: -6838690258238499286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

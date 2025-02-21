@@ -3,11 +3,12 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
     [SerializeField] float speed = 5f;
+    private GameManager gameManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameManager = GameManager.instance;
     }
 
     // Update is called once per frame
@@ -31,7 +32,15 @@ public class EnemyBullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if ((collision.tag == "Spaceship"))
+        {
+            Debug.Log("Enemy Bullet hit Player");
+            Destroy(gameObject);
+            gameManager.GameOver();
+        }
+    }
 
-    
 
 }

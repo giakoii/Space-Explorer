@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Thick Atmo 1_0: -1710476133806517866
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

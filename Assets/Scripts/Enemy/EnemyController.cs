@@ -11,10 +11,24 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Transform? AlienType3BulletPosition1;
     [SerializeField] Transform? AlienType3BulletPosition2;
     [SerializeField] Transform? AlienType3BulletPosition3;
+
+    private int moveDirection;
+    private float changeDirectionTime = 2f; // Change direction every 2 seconds
+    private GameManager gameManager;
+    public GameObject ExplosionGO;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SpawnBullets();
+        moveDirection = Random.Range(0, 2); // 0 = Vertical, 1 = Horizontal
+        InvokeRepeating(nameof(ChangeDirection), changeDirectionTime, changeDirectionTime);
+
+        gameManager = GameManager.instance;
+    }
+
+    public int GetScoreValue()
+    {
+        return scoreValue; 
     }
 
     // Update is called once per frame
@@ -23,6 +37,20 @@ public class EnemyController : MonoBehaviour
         Spawn();
     }
     private void Spawn()
+    {
+
+
+        if (moveDirection == 0)
+        {
+            MoveVertical();
+        }
+        else
+        {
+            MoveHorizontal();
+        }
+    }
+
+    void MoveVertical()
     {
         Vector2 pos = transform.position;
 
@@ -33,6 +61,23 @@ public class EnemyController : MonoBehaviour
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
 
         if (transform.position.y < min.y)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void MoveHorizontal()
+    {
+        Vector2 pos = transform.position;
+
+        pos = new Vector2(pos.x + speed * Time.deltaTime, pos.y);
+
+        transform.position = pos;
+
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+
+        if (transform.position.x < min.x || transform.position.x > max.x)
         {
             Destroy(gameObject);
         }
@@ -53,5 +98,42 @@ public class EnemyController : MonoBehaviour
     {
         GameObject bullet = (GameObject)Instantiate(enemyBulletGO);
         bullet.transform.position = spawnPosition;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if ((collision.tag == "Spaceship"))
+        {
+            Debug.Log("Enemy collide Player");
+            Destroy(gameObject);
+            PlayExplosionAnimation();
+            gameManager.GameOver();
+        }
+        else if ((collision.tag == "PlayerBullet"))
+        {
+            Debug.Log("Enemy collide Player");
+            Destroy(gameObject);
+            PlayExplosionAnimation();
+        }
+    }
+    void PlayExplosionAnimation()
+    {
+        GameObject explosion = (GameObject)Instantiate(ExplosionGO);
+        explosion.transform.position = transform.position;
+        DestroyExplosionAnimation(explosion);
+
+    }
+    void DestroyExplosionAnimation(GameObject explosion)
+    {
+        float explosionDuration = 1f; // Adjust based on the animation length
+        Destroy(explosion, explosionDuration);
+    }
+    public void SetMoveDirection(int direction)
+    {
+        moveDirection = direction;
+    }
+    private void ChangeDirection()
+    {
+        moveDirection = Random.Range(0, 2);
     }
 }

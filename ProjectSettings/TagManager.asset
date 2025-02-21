@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 3
   tags:
   - Projectile
+  - BabyTree
+  - Enemy
+  - EnemyBullet
+  - Star
+  - Spaceship
+  - Asteroid
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -12,8 +19,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Star
   - 
   - 
   - 
@@ -47,6 +54,12 @@ TagManager:
     locked: 0
   - name: 2
     uniqueID: 3114903925
+    locked: 0
+  - name: 3
+    uniqueID: 2586632047
+    locked: 0
+  - name: UI
+    uniqueID: 1865906563
     locked: 0
   m_RenderingLayers:
   - Default

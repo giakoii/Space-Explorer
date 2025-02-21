@@ -10,10 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2569196540847961595}
   - component: {fileID: 367702170341103632}
-  - component: {fileID: 6998501189690921589}
+  - component: {fileID: 1200671931435183245}
+  - component: {fileID: 8503177132347293754}
+  - component: {fileID: -5578652344383037591}
   m_Layer: 0
   m_Name: StarGO
-  m_TagString: Untagged
+  m_TagString: Star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,21 +76,21 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1708335249
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -662442969094171545, guid: 0a01325839bb748d6930d9c788559ef4, type: 3}
+  m_Sprite: {fileID: -1385924888310104046, guid: b73d0bea3e5849e4d8a0a18249385bf4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.34, y: 1.28}
+  m_Size: {x: 1.33, y: 1.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6998501189690921589
+--- !u!114 &1200671931435183245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,8 +99,89 @@ MonoBehaviour:
   m_GameObject: {fileID: 5120775219796157475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff15891e4218840fda1462ba22a0219d, type: 3}
+  m_Script: {fileID: 11500000, guid: 38605c2339a10ef4aafb0a64af84edb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 100
-  speed: 4
+  speed: 3
+--- !u!68 &8503177132347293754
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5120775219796157475}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.022897243, y: -0.26005837}
+  - {x: -0.4382188, y: -0.63039}
+  - {x: -0.21243906, y: -0.1286853}
+  - {x: -0.6868667, y: 0.17985313}
+  - {x: -0.1646478, y: 0.12277524}
+  - {x: -0.0010473132, y: 0.65445673}
+  - {x: 0.1347289, y: 0.1469857}
+  - {x: 0.6741412, y: 0.1591727}
+  - {x: 0.21958208, y: -0.12766393}
+  - {x: 0.44662714, y: -0.660651}
+  - {x: 0.027424574, y: -0.24290927}
+  - {x: -0.040356517, y: -0.31449443}
+  - {x: -0.3416791, y: -0.56206226}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!50 &-5578652344383037591
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5120775219796157475}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
