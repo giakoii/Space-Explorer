@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|C:\\Users\\Admin\\source\\repos\\Space-Explorer\\assets\\scripts\\enemy\\asteroidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\asteroidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|c:\\users\\admin\\source\\repos\\space-explorer\\assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|c:\\users\\admin\\source\\repos\\space-explorer\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|C:\\Users\\Admin\\source\\repos\\Space-Explorer\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|c:\\users\\admin\\source\\repos\\space-explorer\\assets\\scripts\\controller\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|C:\\Users\\Admin\\source\\repos\\Space-Explorer\\assets\\scripts\\controller\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|C:\\Users\\Admin\\source\\repos\\Space-Explorer\\assets\\scripts\\star\\starcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\star\\starcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|C:\\Users\\Admin\\source\\repos\\Space-Explorer\\assets\\scripts\\controller\\missilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\missilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|C:\\Users\\Admin\\source\\repos\\Space-Explorer\\assets\\scripts\\enemy\\asteroidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\asteroidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6496A73A-A8C0-9B69-1670-9851E6C07355}|Assembly-CSharp.csproj|C:\\Users\\Admin\\source\\repos\\Space-Explorer\\assets\\scripts\\enemy\\enemybullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,13 +70,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameOverManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\GameOverManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameOverManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\GameOverManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameOverManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:19:52.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MissileController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Controller\\MissileController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\MissileController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Controller\\MissileController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Controller\\MissileController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T00:03:18.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "SpaceShipController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Controller\\SpaceShipController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\SpaceShipController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Controller\\SpaceShipController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller\\SpaceShipController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAA3wBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T19:16:34.854Z",
               "EditorCaption": ""
@@ -81,7 +115,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Managers\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwEIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAADwv1AAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T18:15:21.674Z",
               "EditorCaption": ""
@@ -94,26 +128,26 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Star\\StarController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Star\\StarController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Star\\StarController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwCgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T02:55:06.731Z"
+              "WhenOpened": "2025-02-18T02:55:06.731Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "AsteroidController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Enemy\\AsteroidController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\AsteroidController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Enemy\\AsteroidController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\AsteroidController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwCsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T11:14:31.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:14:31.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "EnemyBullet.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Enemy\\EnemyBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyBullet.cs",
@@ -125,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "EnemyController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Space-Explorer\\Assets\\Scripts\\Enemy\\EnemyController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyController.cs",

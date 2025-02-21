@@ -8,7 +8,9 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    static int score;
+    public static int score;
+    public static int highestScore;
+    public static int playerScore;
     [SerializeField] public GameObject gameOver;
     [SerializeField] public TextMeshProUGUI scoreText;
     public bool isGameOver = false;
@@ -62,14 +64,22 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         isGameOver = true;
+        playerScore = score;
         score = 0;
         Time.timeScale = 1;
       // GameOver();
         SceneManager.LoadScene("GameOver");
+
+        GameOverManager gameOverManager = FindObjectOfType<GameOverManager>();
+        if (gameOverManager != null)
+        {
+            gameOverManager.UpdateScore();
+        }
     }
     public void AddScore(int points)
     {
         score += points;
+        highestScore = Math.Max(highestScore, score);
         UpdateScore();
     }
     public void UpdateScore()
